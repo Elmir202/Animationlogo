@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    background-color: black;
+}
+
+img {
+  width: 150px;
+  height: 100px;
+  margin: 20%;
+  position: relative;
+  animation: dvd 15s  infinite linear;
+}
+
+@keyframes dvd {
+  0%   {filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%);left: 0px; top: 0px;}
+  25%  {filter: invert(30%) sepia(72%) saturate(1352%) hue-rotate(87deg) brightness(119%);left: 300px; top: -300px;}
+  50%  {filter: invert(86%) sepia(69%) saturate(1352%) hue-rotate(87deg) brightness(119%);left: 690px; top: 120px;}
+  75%  {filter: invert(22%) sepia(54%) saturate(1352%) hue-rotate(87deg) brightness(119%);right: 30px; top: 320px;}
+  100% {filter: invert(36%) sepia(99%) saturate(1352%) hue-rotate(87deg) brightness(119%);left: 0px; top: 0px;}
+}
